@@ -64,7 +64,7 @@ The project followed a phased analytical approach, moving from data ingestion to
 ### Tools Used (Tech Stack)
 | Category | Tool | Purpose |
 | :--- | :--- | :--- |
-| **Database/Transformation** | **SQL (MySQL Workbench)** | Data cleaning, integration, complex aggregation, and KPI calculation. |
+| **Database/Transformation** | **SQL (MySQL Workbench) & Python** | Data cleaning, integration, complex aggregation, and KPI calculation and for big data import (flight.csv). |
 | **Business Intelligence** | **Power BI** | Interactive dashboard creation, data modeling, and visualization. |
 | **Documentation** | **Microsoft Word & Microsoft Power Point** | Final report creation & Presentation. |
 
@@ -74,11 +74,46 @@ The project followed a phased analytical approach, moving from data ingestion to
 
 | Folder | Content | Purpose |
 | :--- | :--- | :--- |
-| `01_Data` | `flights.csv`, `airlines.csv`, `airports.csv` | [cite_start]Raw project data files[cite: 82]. |
-| `02_SQL_Scripts` | `Create_Tables.sql`, `Data_Cleaning_View.sql`, `KPI_Aggregations.sql` | [cite_start]Well-commented SQL code for all transformation and analysis steps[cite: 95]. |
-| `03_Dashboard` | `Airline_Performance_Dashboard.pbix` (or `.twbx`) | [cite_start]The interactive BI tool file containing the complete dashboard[cite: 96]. |
-| `04_Deliverables` | `Final_Project_Report.pdf`, `Presentation_Slides.pptx` | [cite_start]Final project documentation and summary presentation[cite: 97, 98]. |
+| `01_SQL_Scripts` | `Create_Tables.sql`, `Data_Cleaning_View.sql`, `KPI_Aggregations.sql` | Well-commented SQL code for all transformation and analysis steps. |
+| `02_Dashboard` | `Airline_Performance_Dashboard.pbix` (or `.twbx`) | The interactive BI tool file containing the complete dashboard. |
+| `03_Deliverables` | `Final_Project_Report.pdf`, `Presentation_Slides.pptx` | Final project documentation and summary presentation. |
 | `.gitignore` | Configuration file | Ensures large files (like CSVs/PBIs) are not tracked on GitHub. |
+
+## 📁 Project Structure
+📦 us-airline-performance-project/ ├── 📄 us_airline_analysis.sql # Full SQL script ├── 📊 us_airline_performance.pbix # Power BI Dashboard [(https://drive.google.com/file/d/18pQq9S_Y6fWivGx8mureHP8Kh9wqBoEG/view?usp=sharing)] ├── 📄 us_airline_final_report.pdf # Final Word Report ├── 📽️ us_airline_summary_video.mp4 # Video Summary [(https://drive.google.com/file/d/1N3LDlP6Qx1hAsIgQNZDTMAanu4JGeCsr/view?usp=sharing)] ├── 🖼️ visuals/ # Exported visual images (PNG) ├── 📄 README.md # This file
+
+📁 Documents Attached
+
+us_airline_performance_dashboard.pbix – Power BI Dashboard File
+
+us_airline_analysis_final.sql – SQL Script for data prep
+
+us_airline_final_report.pdf – Detailed project report
+
+us_airline_presentation.pptx – Project summary slide deck
+
+us_airline_summary_video.mp4 –
+
+## 🧠 Limitations
+Dataset is limited to the year 2015 only
+No financial or passenger-level data available
+Seasonality & external events not fully modeled
+
+## 🙋‍♀️ Author
+Mohammad Faiz
+✉ faiz288fz@gmail.com
+Linkedin : https://www.linkedin.com/in/mohammad-faiz-51674a282/
+
+## 📎 License
+This project is for educational and portfolio purposes. Attribution required if reused.
+
+## 🛠️ Tools Required
+To explore, run, or replicate this project, the following tools are recommended:
+
+MySQL Workbench – For data cleaning and SQL-based analysis
+Power BI Desktop – For data visualization and dashboard creation
+VS Code For Python for Importing flight.csv / MySQL – To execute .sql files
+Microsoft Excel – For quick reviews and exporting intermediate datasets
 
 ***
 
